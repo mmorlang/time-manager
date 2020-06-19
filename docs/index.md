@@ -14,13 +14,11 @@ by the limitation of those screen time distractions.
 
 - Displays notifications summary of items that were blocked during time frame after it has ended.
 
-
-
+#### Types Of Users
+###### [User Stories](user-stories.md)
 
 #### Design documentation
 
-
-###### [User Stories](user-stories.md)
 
 ###### [Wireframe diagram](wireframe.md)
 
