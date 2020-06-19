@@ -7,11 +7,11 @@ by the limitation of screen time distractions.
 ####Functionality 
 - Works with device notification system to let the user block notifications during set time frames.
 
-- Uses scheduling to repeat time frames that have been previously set by user.
+- Retains previous time frames to keep users information.
 
-- Records users login to save previously set time frames and apps that have been chosen.
+- Retains previously connected apps.
 
-- Displays notifications summary of items that were blocked during set time frame.
+- Displays notifications summary of items that were blocked after time frame is over.
 
 
 
