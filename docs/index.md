@@ -5,16 +5,14 @@ The purpose of this app is to help manage your electronic notifications, whether
 use your free time in a more relaxed, organized, purposeful or productive way, 
 by the limitation of screen time distractions.
 
-
-
-####Functionality 
 - Works with device notification system to let the user block notifications during set time frames.
 
-- Retains previous time frames to keep users information.
+- Retains previous time frames set by users.
 
 - Retains previously connected apps.
 
-- Displays notifications summary of items that were blocked after time frame is over.
+- Displays notifications summary of items that were blocked during time frame after it is over.
+
 
 
 
