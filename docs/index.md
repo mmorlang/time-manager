@@ -28,11 +28,19 @@ by the limitation of screen time distractions.
 
 #### Cloud and device-based services or data
 
-Google OpenID API
+#####[Google OpenID API](#https://www.programmableweb.com/api/google-openid)
 
-* https://www.programmableweb.com/api/google-openid
 
 * Device will use Google OpenID API to be able to sign in/create account with their google credentials.
 * The app will be able to function without constantly connecting to the Google OpenID API.
+
+
+#####[Notifications Overview](#https://developer.android.com/guide/topics/ui/notifiers/notifications)
+
+
+* App connect to the default notifications system on the device.
+* The app will not be able to function without maintaining contact with notification system.
+
+
 
 
