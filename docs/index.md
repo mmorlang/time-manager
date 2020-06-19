@@ -19,28 +19,30 @@ by the limitation of screen time distractions.
 #### Design documentation
 
 
-##### [User Stories](user-stories.md)
+###### [User Stories](user-stories.md)
 
-##### [Wireframe diagram](wireframe.md)
+###### [Wireframe diagram](wireframe.md)
 
-##### [ERD diagram](erd.md)
-
-
-#### Cloud and device-based services or data
-
-[Google OpenID API](#https://www.programmableweb.com/api/google-openid)
+###### [ERD diagram](erd.md)
 
 
+#### Cloud Based Services
+
+#####Google OpenID API
+* https://www.programmableweb.com/api/google-openid
 * Device will use Google OpenID API to be able to sign in/create account with their google credentials.
 * The app will be able to function without constantly connecting to the Google OpenID API.
 
-
-[Notifications Overview](#https://developer.android.com/guide/topics/ui/notifiers/notifications)
-
-
+####Device Based Services
+#####Notification Manager
+* https://developer.android.com/reference/android/app/NotificationManager
 * App connect to the default notifications system on the device.
 * The app will not be able to function without maintaining contact with notification system.
 
+#####AlarmManager
+* https://developer.android.com/reference/android/app/AlarmManager
+* The app will use the AlarmManager to keep track of scheduled time frames the user has set to block notifications.
+* The app will not be able to function without maintaining contact with notification system.
 
 
 
