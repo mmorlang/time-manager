@@ -1,17 +1,18 @@
-# Time Manager
+
 
 ## Introduction
-The purpose of this app is to help manage your electronic notifications, whether its to 
-use your free time in a more relaxed, organized, purposeful or productive way, 
-by the limitation of screen time distractions.
+This app is to help manage your electronic notifications, by connecting to your device scheduling and notification systems and blocking certain app notifications you've selected.
+Resulting in your undivided time to be used in a more relaxed, organized, purposeful or productive way of your choosing, 
+by the limitation of those screen time distractions.
 
-- Works with device notification system to let the user block notifications during set time frames.
-
-- Retains previous time frames set by users.
 
 - Retains previously connected apps.
 
-- Displays notifications summary of items that were blocked during time frame after it is over.
+- Retains previous time frames set by users.
+
+- Works with device notification system to let the user block notifications during set time frames.
+
+- Displays notifications summary of items that were blocked during time frame after it has ended.
 
 
 
