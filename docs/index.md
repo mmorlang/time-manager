@@ -25,3 +25,14 @@ by the limitation of screen time distractions.
 
 ##### [ERD diagram](erd.md)
 
+
+#### Cloud and device-based services or data
+
+Google OpenID API
+
+* https://www.programmableweb.com/api/google-openid
+
+* Device will use Google OpenID API to be able to sign in/create account with their google credentials.
+* The app will be able to function without connecting to the Google OpenID API.
+
+
