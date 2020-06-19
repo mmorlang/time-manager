@@ -10,7 +10,7 @@ by the limitation of those screen time distractions.
 
 - Retains previous time frames set by users.
 
-- Works with device notification system to let the user block notifications from specified app during set time frames.
+- Works with device notification system to let the user block notifications from specified app/apps during set time frame/time frames.
 
 - Displays notifications summary of items that were blocked during time frame after it has ended.
 
