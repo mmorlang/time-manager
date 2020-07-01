@@ -1,5 +1,5 @@
 package edu.cnm.deepdive.timemanager.service;
 
-public class Database  {
+public class ConnectedAppRepository {
 
 }
