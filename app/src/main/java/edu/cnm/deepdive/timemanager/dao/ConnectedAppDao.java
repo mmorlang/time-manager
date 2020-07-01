@@ -1,11 +1,14 @@
 package edu.cnm.deepdive.timemanager.dao;
 
+import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
+import androidx.room.Query;
 import androidx.room.Update;
 import edu.cnm.deepdive.timemanager.model.entity.ConnectedApp;
+import edu.cnm.deepdive.timemanager.model.entity.Notification;
 import io.reactivex.Single;
 import java.util.Collection;
 import java.util.List;
@@ -25,5 +28,6 @@ public interface ConnectedAppDao {
   @Delete
   Single<Integer> delete(ConnectedApp... connectedApps);
 
-
+  @Query("SELECT * FROM ConnectedApp ORDER BY app_name")
+  LiveData<List<Notification>> displayAll();
 }

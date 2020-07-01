@@ -1,10 +1,12 @@
 package edu.cnm.deepdive.timemanager.dao;
 
 
+import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
+import androidx.room.Query;
 import androidx.room.Update;
 import edu.cnm.deepdive.timemanager.model.entity.Notification;
 import io.reactivex.Single;
@@ -15,10 +17,10 @@ import java.util.List;
 public interface NotificationDao {
 
 
-  @Insert(onConflict = OnConflictStrategy.IGNORE)
+  @Insert
   Single<Long> insert(Notification notification);
 
-  @Insert(onConflict = OnConflictStrategy.IGNORE)
+  @Insert
   Single<List<Long>> insert(Collection<Notification> notifications);
 
   @Update
@@ -26,4 +28,12 @@ public interface NotificationDao {
 
   @Delete
   Single<Integer> delete(Notification... notifications);
+
+@Query("SELECT * FROM Notification ORDER BY summary")
+  LiveData<List<Notification>> selectAll();
+
+@Query("SELECT * FROM Notification WHERE timeframe_id = :timeframeId")
+  LiveData<List<Notification>> selectByTimeframe(long timeframeId);
+
+// TODO Order by time stamp.
 }

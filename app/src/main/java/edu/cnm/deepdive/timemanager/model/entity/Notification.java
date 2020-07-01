@@ -1,5 +1,6 @@
 package edu.cnm.deepdive.timemanager.model.entity;
 
+import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.ForeignKey;
@@ -22,13 +23,14 @@ public class Notification {
   @ColumnInfo(name = "notification_id")
   private long id;
 
+  @NonNull
+  @ColumnInfo(index = true)
+  private String summary = "";
 
-  @ColumnInfo(name = "summary")
-  private String text = "";
-
+// TODO Notification timestamp.
 
   @ColumnInfo(name = "timeframe_id", index = true)
-  private long timeframe_id;
+  private long timeframeId;
 
   public long getId() {
     return id;
@@ -38,19 +40,20 @@ public class Notification {
     this.id = id;
   }
 
-  public String getText() {
-    return text;
+  @NonNull
+  public String getSummary() {
+    return summary;
   }
 
-  public void setText(String text) {
-    this.text = text;
+  public void setSummary(@NonNull String summary) {
+    this.summary = summary;
   }
 
-  public long getTimeframe_id() {
-    return timeframe_id;
+  public long getTimeframeId() {
+    return timeframeId;
   }
 
-  public void setTimeframe_id(long timeframe_id) {
-    this.timeframe_id = timeframe_id;
+  public void setTimeframeId(long timeframeId) {
+    this.timeframeId = timeframeId;
   }
 }
