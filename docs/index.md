@@ -25,6 +25,12 @@ by the limitation of those screen time distractions.
 ###### [ERD diagram](erd.md)
 
 
+##### [Notification Entity](https://github.com/mmorlang/time-manager/blob/master/app/src/main/java/edu/cnm/deepdive/timemanager/model/entity/Notification.java)
+##### [Timeframe Entity](https://github.com/mmorlang/time-manager/blob/master/app/src/main/java/edu/cnm/deepdive/timemanager/model/entity/Timeframe.java)
+##### [Connected App Entity](https://github.com/mmorlang/time-manager/blob/master/app/src/main/java/edu/cnm/deepdive/timemanager/model/entity/ConnectedApp.java)
+
+
+
 #### Cloud Based Services
 
 ##### Google OpenID API
