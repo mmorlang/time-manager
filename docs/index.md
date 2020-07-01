@@ -25,11 +25,17 @@ by the limitation of those screen time distractions.
 ###### [ERD diagram](erd.md)
 
 
+###Entities
+
 ##### [Notification Entity](https://github.com/mmorlang/time-manager/blob/master/app/src/main/java/edu/cnm/deepdive/timemanager/model/entity/Notification.java)
 ##### [Timeframe Entity](https://github.com/mmorlang/time-manager/blob/master/app/src/main/java/edu/cnm/deepdive/timemanager/model/entity/Timeframe.java)
 ##### [Connected App Entity](https://github.com/mmorlang/time-manager/blob/master/app/src/main/java/edu/cnm/deepdive/timemanager/model/entity/ConnectedApp.java)
 
+###Daos
 
+##### [Notification Dao](https://github.com/mmorlang/time-manager/blob/master/app/src/main/java/edu/cnm/deepdive/timemanager/dao/NotificationDao.java)
+##### [Timeframe Dao](https://github.com/mmorlang/time-manager/blob/master/app/src/main/java/edu/cnm/deepdive/timemanager/dao/TimeframeDao.java)
+##### [Connected App Dao](https://github.com/mmorlang/time-manager/blob/master/app/src/main/java/edu/cnm/deepdive/timemanager/dao/ConnectedAppDao.java)
 
 #### Cloud Based Services
 
