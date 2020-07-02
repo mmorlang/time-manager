@@ -9,7 +9,7 @@ import javax.xml.transform.Source;
 
 @Entity(
     foreignKeys = @ForeignKey(
-        entity = Source.class,
+        entity = Notification.class,
         parentColumns = "timeframe_id",
         childColumns = "timeframe_id",
         onDelete = ForeignKey.SET_NULL

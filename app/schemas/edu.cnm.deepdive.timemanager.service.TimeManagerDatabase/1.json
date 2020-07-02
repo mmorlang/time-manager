@@ -1,0 +1,154 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "f06bac901ced0df36f56ba3262c59999",
+    "entities": [
+      {
+        "tableName": "ConnectedApp",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`connected_app_id` INTEGER, `app_name` TEXT, PRIMARY KEY(`connected_app_id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "connected_app_id",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "appName",
+            "columnName": "app_name",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "connected_app_id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "Timeframe",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`timeframe_id` INTEGER, `pre_set_time` INTEGER NOT NULL, `connected_app_id` INTEGER NOT NULL, PRIMARY KEY(`timeframe_id`), FOREIGN KEY(`connected_app_id`) REFERENCES `ConnectedApp`(`connected_app_id`) ON UPDATE NO ACTION ON DELETE SET NULL )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "timeframe_id",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "preSetTime",
+            "columnName": "pre_set_time",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "connected_app_id",
+            "columnName": "connected_app_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "timeframe_id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [
+          {
+            "name": "index_Timeframe_connected_app_id",
+            "unique": false,
+            "columnNames": [
+              "connected_app_id"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_Timeframe_connected_app_id` ON `${TABLE_NAME}` (`connected_app_id`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "ConnectedApp",
+            "onDelete": "SET NULL",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "connected_app_id"
+            ],
+            "referencedColumns": [
+              "connected_app_id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "Notification",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`notification_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `summary` TEXT NOT NULL, `timeframe_id` INTEGER NOT NULL, FOREIGN KEY(`timeframe_id`) REFERENCES `Notification`(`timeframe_id`) ON UPDATE NO ACTION ON DELETE SET NULL )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "notification_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "summary",
+            "columnName": "summary",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "timeframeId",
+            "columnName": "timeframe_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "notification_id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "index_Notification_summary",
+            "unique": false,
+            "columnNames": [
+              "summary"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_Notification_summary` ON `${TABLE_NAME}` (`summary`)"
+          },
+          {
+            "name": "index_Notification_timeframe_id",
+            "unique": false,
+            "columnNames": [
+              "timeframe_id"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_Notification_timeframe_id` ON `${TABLE_NAME}` (`timeframe_id`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "Notification",
+            "onDelete": "SET NULL",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "timeframe_id"
+            ],
+            "referencedColumns": [
+              "timeframe_id"
+            ]
+          }
+        ]
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'f06bac901ced0df36f56ba3262c59999')"
+    ]
+  }
+}

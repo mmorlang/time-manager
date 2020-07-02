@@ -8,7 +8,8 @@ import javax.xml.transform.Source;
 
 @Entity(
     foreignKeys = @ForeignKey(
-        entity = Source.class,
+        entity = ConnectedApp
+            .class,
         parentColumns = "connected_app_id",
         childColumns = "connected_app_id",
         onDelete = ForeignKey.SET_NULL
