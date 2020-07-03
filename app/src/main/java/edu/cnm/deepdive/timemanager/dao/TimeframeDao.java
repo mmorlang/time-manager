@@ -30,6 +30,6 @@ public interface TimeframeDao {
   @Delete
   Single<Integer> delete(Timeframe... timeframes);
 
-  @Query("SELECT * FROM Timeframe ORDER BY pre_set_time")
-  LiveData<List<Notification>> displayAll();
+  @Query("SELECT * FROM Timeframe ORDER BY timeframe_id")
+  LiveData<List<Timeframe>> displayAll();
 }

@@ -2,7 +2,7 @@
   "formatVersion": 1,
   "database": {
     "version": 1,
-    "identityHash": "f06bac901ced0df36f56ba3262c59999",
+    "identityHash": "bd8f83e21ada0316f53da26c82a3489d",
     "entities": [
       {
         "tableName": "ConnectedApp",
@@ -85,7 +85,7 @@
       },
       {
         "tableName": "Notification",
-        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`notification_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `summary` TEXT NOT NULL, `timeframe_id` INTEGER NOT NULL, FOREIGN KEY(`timeframe_id`) REFERENCES `Notification`(`timeframe_id`) ON UPDATE NO ACTION ON DELETE SET NULL )",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`notification_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `summary` TEXT NOT NULL, `timeframe_id` INTEGER NOT NULL, FOREIGN KEY(`timeframe_id`) REFERENCES `Timeframe`(`timeframe_id`) ON UPDATE NO ACTION ON DELETE SET NULL )",
         "fields": [
           {
             "fieldPath": "id",
@@ -132,7 +132,7 @@
         ],
         "foreignKeys": [
           {
-            "table": "Notification",
+            "table": "Timeframe",
             "onDelete": "SET NULL",
             "onUpdate": "NO ACTION",
             "columns": [
@@ -148,7 +148,7 @@
     "views": [],
     "setupQueries": [
       "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
-      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'f06bac901ced0df36f56ba3262c59999')"
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'bd8f83e21ada0316f53da26c82a3489d')"
     ]
   }
 }

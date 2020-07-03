@@ -29,5 +29,5 @@ public interface ConnectedAppDao {
   Single<Integer> delete(ConnectedApp... connectedApps);
 
   @Query("SELECT * FROM ConnectedApp ORDER BY app_name")
-  LiveData<List<Notification>> displayAll();
+  LiveData<List<ConnectedApp>> displayAll();
 }
