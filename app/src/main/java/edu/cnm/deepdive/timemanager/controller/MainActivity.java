@@ -7,6 +7,7 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+import edu.cnm.deepdive.timemanager.R;
 
 public class MainActivity extends AppCompatActivity {
 

@@ -23,10 +23,10 @@ public class ConnectedAppRepository {
     connectedAppDao = database.getConnectedAppDao();
   }
 
-  public LiveData<List<Notification>> getAll() { return connectedAppDao.selectAll();
+  public LiveData<List<ConnectedApp>> getAll() { return connectedAppDao.selectAll();
   }
 
-  public Single<Notification> get(long id) {
+  public Single<ConnectedApp> get(long id) {
     return connectedAppDao.selectById
         .subscribeOn(Schedulers.io());
   }

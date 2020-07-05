@@ -11,7 +11,8 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.navigation.fragment.NavHostFragment;
-import edu.cnm.deepdive.timemanager.controller.R;
+import edu.cnm.deepdive.timemanager.R;
+
 
 public class HomeFragment extends Fragment {
 

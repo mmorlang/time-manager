@@ -10,7 +10,8 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
-import edu.cnm.deepdive.timemanager.controller.R;
+import edu.cnm.deepdive.timemanager.R;
+
 
 public class HomeSecondFragment extends Fragment {
 
