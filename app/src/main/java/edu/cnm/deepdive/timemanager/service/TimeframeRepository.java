@@ -25,11 +25,11 @@ public class TimeframeRepository {
     timeframeDao = database.getTimeframeDao();
   }
 
-  public LiveData<List<Notification>> getAll() {
+  public LiveData<List<Timeframe>> getAll() {
     return timeframeDao.selectAll();
   }
 
-  public Single<ConnectedApp> get(long id) {
+  public Single<Timeframe> get(long id) {
     return timeframeDao.selectById(id)
         .subscribeOn(Schedulers.io());
   }

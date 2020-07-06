@@ -8,6 +8,7 @@ import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 import androidx.room.Update;
+import edu.cnm.deepdive.timemanager.model.entity.ConnectedApp;
 import edu.cnm.deepdive.timemanager.model.entity.Notification;
 import io.reactivex.Single;
 import java.util.Collection;
@@ -36,4 +37,7 @@ public interface NotificationDao {
   LiveData<List<Notification>> selectByTimeframe(long timeframeId);
 
 // TODO Order by time stamp.
+
+  @Query( "SELECT * FROM Notification WHERE notification_id = :notificationId")
+  Single<Notification> selectById(long notificationId);
 }

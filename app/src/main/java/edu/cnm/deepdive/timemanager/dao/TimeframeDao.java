@@ -8,6 +8,7 @@ import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 import androidx.room.Update;
+import edu.cnm.deepdive.timemanager.model.entity.ConnectedApp;
 import edu.cnm.deepdive.timemanager.model.entity.Notification;
 import edu.cnm.deepdive.timemanager.model.entity.Timeframe;
 import io.reactivex.Single;
@@ -31,5 +32,8 @@ public interface TimeframeDao {
   Single<Integer> delete(Timeframe... timeframes);
 
   @Query("SELECT * FROM Timeframe ORDER BY timeframe_id")
-  LiveData<List<Timeframe>> displayAll();
+  LiveData<List<Timeframe>> selectAll();
+
+  @Query( "SELECT * FROM Timeframe WHERE timeframe_id = :timeframeId")
+  Single<Timeframe> selectById(long timeframeId);
 }

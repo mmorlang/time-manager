@@ -29,5 +29,8 @@ public interface ConnectedAppDao {
   Single<Integer> delete(ConnectedApp... connectedApps);
 
   @Query("SELECT * FROM ConnectedApp ORDER BY app_name")
-  LiveData<List<ConnectedApp>> displayAll();
+  LiveData<List<ConnectedApp>> selectAll();
+
+  @Query( "SELECT * FROM ConnectedApp WHERE connected_app_id = :connectedAppId")
+  Single<ConnectedApp> selectById(long connectedAppId);
 }

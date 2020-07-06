@@ -27,7 +27,7 @@ public class ConnectedAppRepository {
   }
 
   public Single<ConnectedApp> get(long id) {
-    return connectedAppDao.selectById
+    return connectedAppDao.selectById(id)
         .subscribeOn(Schedulers.io());
   }
 
