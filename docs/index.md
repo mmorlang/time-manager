@@ -37,6 +37,19 @@ by the limitation of those screen time distractions.
 ##### [Timeframe Dao](https://github.com/mmorlang/time-manager/blob/master/app/src/main/java/edu/cnm/deepdive/timemanager/dao/TimeframeDao.java)
 ##### [Connected App Dao](https://github.com/mmorlang/time-manager/blob/master/app/src/main/java/edu/cnm/deepdive/timemanager/dao/ConnectedAppDao.java)
 
+###Repositories
+
+##### [Notification Repository](https://github.com/mmorlang/time-manager/blob/master/app/src/main/java/edu/cnm/deepdive/timemanager/service/NotificationRepository.java)
+##### [TimeFrame Repository](https://github.com/mmorlang/time-manager/blob/master/app/src/main/java/edu/cnm/deepdive/timemanager/service/TimeframeRepository.java)
+##### [Connected App Repository](https://github.com/mmorlang/time-manager/blob/master/app/src/main/java/edu/cnm/deepdive/timemanager/service/ConnectedAppRepository.java)
+
+### Databases
+* [Time Manager Database](TimeManagerDatabase.md)
+
+### DDL
+* [Data Definition Language](ddl.md)
+
+
 #### Cloud Based Services
 
 ##### Google OpenID API
