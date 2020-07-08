@@ -44,10 +44,10 @@ by the limitation of those screen time distractions.
 ##### [Connected App Repository](https://github.com/mmorlang/time-manager/blob/master/app/src/main/java/edu/cnm/deepdive/timemanager/service/ConnectedAppRepository.java)
 
 ### Databases
-* [Time Manager Database](TimeManagerDatabase.md)
+* [Time Manager Database](https://github.com/mmorlang/time-manager/blob/master/docs/TimeManagerDatabase.md)
 
 ### DDL
-* [Data Definition Language](ddl.md)
+* [Data Definition Language](https://github.com/mmorlang/time-manager/blob/master/docs/ddl.md)
 
 
 #### Cloud Based Services
