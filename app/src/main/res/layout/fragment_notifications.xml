@@ -18,16 +18,12 @@
       android:id="@+id/toggleButton1"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="ToggleButton"
-      tools:layout_editor_absoluteX="29dp"
-      tools:layout_editor_absoluteY="276dp"/>
+      android:text="ToggleButton"/>
     <ToggleButton
       android:id="@+id/toggleButton2"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="ToggleButton"
-      tools:layout_editor_absoluteX="29dp"
-      tools:layout_editor_absoluteY="352dp"/>
+      android:text="ToggleButton"/>
     <ToggleButton
       android:id="@+id/toggleButton3"
       android:layout_width="wrap_content"
@@ -39,24 +35,18 @@
       android:id="@+id/toggleButton4"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="ToggleButton"
-      tools:layout_editor_absoluteX="39dp"
-      tools:layout_editor_absoluteY="211dp"/>
+      android:text="ToggleButton"/>
     <ToggleButton
       android:id="@+id/toggleButton5"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="ToggleButton"
-      tools:layout_editor_absoluteX="203dp"
-      tools:layout_editor_absoluteY="153dp"/>
+      android:text="ToggleButton"/>
   </androidx.constraintlayout.widget.ConstraintLayout>
   <ToggleButton
     android:id="@+id/toggleButton6"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="ToggleButton"
-    tools:layout_editor_absoluteX="196dp"
-    tools:layout_editor_absoluteY="276dp"/>
+    android:text="ToggleButton"/>
   <ToggleButton
     android:id="@+id/toggleButton7"
     android:layout_width="wrap_content"
