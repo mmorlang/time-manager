@@ -1,9 +1,10 @@
 ### User Stories
 
-* Individuals who have limited time and want to prioritize their time so that they can be as productive as possible.
+* Individuals who have limited time and want to prioritize it,
+ so that they can be as productive as possible.
 
 > Sometimes it can be hard for me to focus on a current task 
->and give it my full attention, so this app will help me be free 
+>and give it my full attention, this app will help me be free 
 >of notification distractions during that time of concentration.
 
 

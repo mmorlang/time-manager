@@ -11,8 +11,7 @@ import javax.xml.transform.Source;
     foreignKeys = @ForeignKey(
         entity = Timeframe.class,
         parentColumns = "timeframe_id",
-        childColumns = "timeframe_id",
-        onDelete = ForeignKey.SET_NULL
+        childColumns = "timeframe_id"
     )
 )
 

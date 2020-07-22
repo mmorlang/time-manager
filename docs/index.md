@@ -1,18 +1,17 @@
 
 
-## Introduction
-This app is to help manage your electronic notifications, by connecting to your device scheduling and notification systems and blocking certain app notifications you've selected.
-Resulting in your undivided time to be used in a more relaxed, organized, purposeful or productive way of your choosing, 
-by the limitation of those screen time distractions.
+## Introduction/Description
+The basic function of the time manager app is to allow the scheduling of time frames where certain notifications are being blocked from selected apps, via user discretion.
+The motivation/inspiration for this app was on more of a personal level, where I could see myself, well as others using the app for better time management, allotting screen free time and better focus time by limiting distractions.
+Some of the key elements of this app are as following.
 
-
-- Retains previously connected apps.
+- Retains previously connected apps chosen by user.
 
 - Retains previous time frames set by users.
 
 - Works with device notification system to let the user block notifications from specified app/apps during set time frame/time frames.
 
-- Displays notifications summary of items that were blocked during time frame after it has ended.
+- Displays notifications summary of items that were blocked, after time frame has ended.
 
 #### Types Of Users
 ###### [User Stories](user-stories.md)
@@ -47,7 +46,7 @@ by the limitation of those screen time distractions.
 * [Time Manager Database](https://github.com/mmorlang/time-manager/blob/master/docs/TimeManagerDatabase.md)
 
 ### DDL
-* [Data Definition Language](https://github.com/mmorlang/time-manager/blob/master/docs/ddl.md)
+* [ddl.md](docs/ddl.md)
 
 
 #### Cloud Based Services

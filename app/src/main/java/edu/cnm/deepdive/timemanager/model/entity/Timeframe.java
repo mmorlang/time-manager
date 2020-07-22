@@ -11,8 +11,7 @@ import javax.xml.transform.Source;
         entity = ConnectedApp
             .class,
         parentColumns = "connected_app_id",
-        childColumns = "connected_app_id",
-        onDelete = ForeignKey.SET_NULL
+        childColumns = "connected_app_id"
     )
 )
 
