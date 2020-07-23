@@ -51,10 +51,10 @@ Some of the key elements of this app are as following.
 
 #### Cloud Based Services
 
-##### Google OpenID API
-* [https://www.programmableweb.com/api/google-openid](https://www.programmableweb.com/api/google-openid)
-* Device will use Google OpenID API to be able to sign in/create account with their google credentials.
-* The app will be able to function without constantly connecting to the Google OpenID API.
+##### Google SignIn
+* [https://developers.google.com/android/reference/com/google/android/gms/auth/api/signin/GoogleSignInApi](https://developers.google.com/android/reference/com/google/android/gms/auth/api/signin/GoogleSignInApi)
+* Device will use Google SignIn to be able to sign in/create account with their google credentials.
+* The app will be able to function without constantly connecting to Google.
 
 #### Device Based Services
 ##### Notification Manager

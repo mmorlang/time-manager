@@ -2,7 +2,7 @@
   "formatVersion": 1,
   "database": {
     "version": 1,
-    "identityHash": "bd8f83e21ada0316f53da26c82a3489d",
+    "identityHash": "65ef17fa1e064c02682ad5375f1983d7",
     "entities": [
       {
         "tableName": "ConnectedApp",
@@ -32,7 +32,7 @@
       },
       {
         "tableName": "Timeframe",
-        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`timeframe_id` INTEGER, `pre_set_time` INTEGER NOT NULL, `connected_app_id` INTEGER NOT NULL, PRIMARY KEY(`timeframe_id`), FOREIGN KEY(`connected_app_id`) REFERENCES `ConnectedApp`(`connected_app_id`) ON UPDATE NO ACTION ON DELETE SET NULL )",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`timeframe_id` INTEGER, `pre_set_time` INTEGER NOT NULL, `connected_app_id` INTEGER NOT NULL, PRIMARY KEY(`timeframe_id`), FOREIGN KEY(`connected_app_id`) REFERENCES `ConnectedApp`(`connected_app_id`) ON UPDATE NO ACTION ON DELETE NO ACTION )",
         "fields": [
           {
             "fieldPath": "id",
@@ -72,7 +72,7 @@
         "foreignKeys": [
           {
             "table": "ConnectedApp",
-            "onDelete": "SET NULL",
+            "onDelete": "NO ACTION",
             "onUpdate": "NO ACTION",
             "columns": [
               "connected_app_id"
@@ -85,7 +85,7 @@
       },
       {
         "tableName": "Notification",
-        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`notification_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `summary` TEXT NOT NULL, `timeframe_id` INTEGER NOT NULL, FOREIGN KEY(`timeframe_id`) REFERENCES `Timeframe`(`timeframe_id`) ON UPDATE NO ACTION ON DELETE SET NULL )",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`notification_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `summary` TEXT NOT NULL, `timeframe_id` INTEGER NOT NULL, FOREIGN KEY(`timeframe_id`) REFERENCES `Timeframe`(`timeframe_id`) ON UPDATE NO ACTION ON DELETE NO ACTION )",
         "fields": [
           {
             "fieldPath": "id",
@@ -133,7 +133,7 @@
         "foreignKeys": [
           {
             "table": "Timeframe",
-            "onDelete": "SET NULL",
+            "onDelete": "NO ACTION",
             "onUpdate": "NO ACTION",
             "columns": [
               "timeframe_id"
@@ -148,7 +148,7 @@
     "views": [],
     "setupQueries": [
       "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
-      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'bd8f83e21ada0316f53da26c82a3489d')"
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '65ef17fa1e064c02682ad5375f1983d7')"
     ]
   }
 }

@@ -25,7 +25,8 @@
     android:layout_margin="16dp"
     android:src="@android:drawable/ic_menu_add"
     app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintRight_toRightOf="parent"/>
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="@id/switch2"/>
   <Switch
     android:id="@+id/switch1"
     android:layout_width="wrap_content"

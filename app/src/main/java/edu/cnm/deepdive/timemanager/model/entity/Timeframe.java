@@ -26,8 +26,10 @@ public class Timeframe {
   @ColumnInfo(name = "pre_set_time")
   private long preSetTime;
 
+
   @ColumnInfo(name = "connected_app_id", index = true)
   private long connected_app_id;
+
 
   public void setId(Long id) {
     this.id = id;
