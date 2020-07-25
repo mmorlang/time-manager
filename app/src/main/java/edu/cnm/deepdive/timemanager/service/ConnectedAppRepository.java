@@ -2,9 +2,8 @@ package edu.cnm.deepdive.timemanager.service;
 
 import android.content.Context;
 import androidx.lifecycle.LiveData;
-import edu.cnm.deepdive.timemanager.dao.ConnectedAppDao;
+import edu.cnm.deepdive.timemanager.model.dao.ConnectedAppDao;
 import edu.cnm.deepdive.timemanager.model.entity.ConnectedApp;
-import edu.cnm.deepdive.timemanager.model.entity.Notification;
 import io.reactivex.Completable;
 import io.reactivex.Single;
 import io.reactivex.schedulers.Schedulers;

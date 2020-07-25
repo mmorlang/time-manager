@@ -30,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
     setContentView(R.layout.activity_main);
     setupNavigation();
     setupObservers();
-    observePermissions();
     checkPermissionsOnce();
   }
 
@@ -98,15 +97,6 @@ public class MainActivity extends AppCompatActivity {
     }
   }
 
-  private void observePermissions() {
-    permissionsService.getPermissions().observe(this, (perms) -> {
-      // Display the permissions in a list view.
-      ListView permissions = findViewById(R.id.permissions);
-      ArrayAdapter<String> adapter =
-          new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, new LinkedList<>(perms));
-      permissions.setAdapter(adapter);
-    });
-  }
 
   private void checkPermissionsOnce() {
     MainViewModel viewModel = new ViewModelProvider(this).get(MainViewModel.class);

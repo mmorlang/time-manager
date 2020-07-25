@@ -2,7 +2,7 @@
   "formatVersion": 1,
   "database": {
     "version": 1,
-    "identityHash": "65ef17fa1e064c02682ad5375f1983d7",
+    "identityHash": "d404412995d0ebf0724387acae8f3427",
     "entities": [
       {
         "tableName": "ConnectedApp",
@@ -32,7 +32,7 @@
       },
       {
         "tableName": "Timeframe",
-        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`timeframe_id` INTEGER, `pre_set_time` INTEGER NOT NULL, `connected_app_id` INTEGER NOT NULL, PRIMARY KEY(`timeframe_id`), FOREIGN KEY(`connected_app_id`) REFERENCES `ConnectedApp`(`connected_app_id`) ON UPDATE NO ACTION ON DELETE NO ACTION )",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`timeframe_id` INTEGER, `start` INTEGER, `end` INTEGER, `connected_app_id` INTEGER NOT NULL, PRIMARY KEY(`timeframe_id`), FOREIGN KEY(`connected_app_id`) REFERENCES `ConnectedApp`(`connected_app_id`) ON UPDATE NO ACTION ON DELETE NO ACTION )",
         "fields": [
           {
             "fieldPath": "id",
@@ -41,13 +41,19 @@
             "notNull": false
           },
           {
-            "fieldPath": "preSetTime",
-            "columnName": "pre_set_time",
+            "fieldPath": "start",
+            "columnName": "start",
             "affinity": "INTEGER",
-            "notNull": true
+            "notNull": false
           },
           {
-            "fieldPath": "connected_app_id",
+            "fieldPath": "end",
+            "columnName": "end",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "connectedAppId",
             "columnName": "connected_app_id",
             "affinity": "INTEGER",
             "notNull": true
@@ -148,7 +154,7 @@
     "views": [],
     "setupQueries": [
       "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
-      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '65ef17fa1e064c02682ad5375f1983d7')"
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'd404412995d0ebf0724387acae8f3427')"
     ]
   }
 }

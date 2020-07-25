@@ -3,9 +3,7 @@ package edu.cnm.deepdive.timemanager.service;
 
 import android.content.Context;
 import androidx.lifecycle.LiveData;
-import edu.cnm.deepdive.timemanager.dao.TimeframeDao;
-import edu.cnm.deepdive.timemanager.model.entity.ConnectedApp;
-import edu.cnm.deepdive.timemanager.model.entity.Notification;
+import edu.cnm.deepdive.timemanager.model.dao.TimeframeDao;
 import edu.cnm.deepdive.timemanager.model.entity.Timeframe;
 import io.reactivex.Completable;
 import io.reactivex.Single;

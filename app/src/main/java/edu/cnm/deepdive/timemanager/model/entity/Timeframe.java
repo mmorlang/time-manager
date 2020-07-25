@@ -4,7 +4,7 @@ import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
-import javax.xml.transform.Source;
+import java.time.LocalTime;
 
 @Entity(
     foreignKeys = @ForeignKey(
@@ -23,12 +23,12 @@ public class Timeframe {
   private Long id;
 
 
-  @ColumnInfo(name = "pre_set_time")
-  private long preSetTime;
+  private LocalTime start;
 
+  private LocalTime end;
 
   @ColumnInfo(name = "connected_app_id", index = true)
-  private long connected_app_id;
+  private long connectedAppId;
 
 
   public void setId(Long id) {
@@ -39,20 +39,28 @@ public class Timeframe {
     return id;
   }
 
-  public long getPreSetTime() {
-    return preSetTime;
+  public LocalTime getStart() {
+    return start;
   }
 
-  public void setPreSetTime(long preSetTime) {
-    this.preSetTime = preSetTime;
+  public void setStart(LocalTime start) {
+    this.start = start;
   }
 
-  public long getConnected_app_id() {
-    return connected_app_id;
+  public LocalTime getEnd() {
+    return end;
   }
 
-  public void setConnected_app_id(long connected_app_id) {
-    this.connected_app_id = connected_app_id;
+  public void setEnd(LocalTime end) {
+    this.end = end;
+  }
+
+  public long getConnectedAppId() {
+    return connectedAppId;
+  }
+
+  public void setConnectedAppId(long connectedAppId) {
+    this.connectedAppId = connectedAppId;
   }
 
 }

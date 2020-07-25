@@ -1,14 +1,12 @@
-package edu.cnm.deepdive.timemanager.dao;
+package edu.cnm.deepdive.timemanager.model.dao;
 
 
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
-import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 import androidx.room.Update;
-import edu.cnm.deepdive.timemanager.model.entity.ConnectedApp;
 import edu.cnm.deepdive.timemanager.model.entity.Notification;
 import io.reactivex.Single;
 import java.util.Collection;
