@@ -36,4 +36,4 @@ CREATE INDEX IF NOT EXISTS `index_Notification_timeframe_id` ON `Notification` (
 
 ```
 
-[ddl.sql](docs/sql/ddl.sql)
+[ddl.sql](sql/ddl.sql)
