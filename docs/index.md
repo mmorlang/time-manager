@@ -52,6 +52,8 @@ Some of the key elements of this app are as following.
 ### User Instructions
 * [User Instructions](user-instructions.md)
 
+### Build Instructions
+* [Build Instructions](build-instructions.md)
 
 #### Cloud Based Services
 
