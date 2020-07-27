@@ -46,7 +46,11 @@ Some of the key elements of this app are as following.
 * [Time Manager Database](https://github.com/mmorlang/time-manager/blob/master/docs/TimeManagerDatabase.md)
 
 ### DDL
-* [ddl.md](docs/ddl.md)
+* [ddl.md](ddl.md)
+
+
+### User Instructions
+* [User Instructions](user-instructions.md)
 
 
 #### Cloud Based Services
