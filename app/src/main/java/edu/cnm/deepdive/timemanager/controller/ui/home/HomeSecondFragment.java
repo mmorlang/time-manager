@@ -12,7 +12,9 @@ import androidx.navigation.fragment.NavHostFragment;
 
 import edu.cnm.deepdive.timemanager.R;
 
-
+/**
+ * This class contains an onCreate method that only invokes when the app is first installed.
+ */
 public class HomeSecondFragment extends Fragment {
 
   @Override
@@ -24,6 +26,11 @@ public class HomeSecondFragment extends Fragment {
     return inflater.inflate(R.layout.fragment_home_second, container, false);
   }
 
+  /**
+   * onViewCreated creates the objects for onCreateView.
+   * @param view
+   * @param savedInstanceState
+   */
   public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
     super.onViewCreated(view, savedInstanceState);
 

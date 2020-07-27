@@ -6,6 +6,10 @@ import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
 import java.time.LocalTime;
 
+/**
+ * This Timframe Entity Class declares all of its own attributes along with attributes that are
+ * being joined together as foreign keys.
+ */
 @Entity(
     foreignKeys = @ForeignKey(
         entity = ConnectedApp
@@ -15,18 +19,22 @@ import java.time.LocalTime;
     )
 )
 
-
 public class Timeframe {
 
+  /**
+   * This Column declares the timframeId attribute and its conditions.
+   */
   @PrimaryKey
   @ColumnInfo(name = "timeframe_id")
   private Long id;
-
 
   private LocalTime start;
 
   private LocalTime end;
 
+  /**
+   * This Column declares the connectedAppId attribute and its conditions.
+   */
   @ColumnInfo(name = "connected_app_id", index = true)
   private long connectedAppId;
 

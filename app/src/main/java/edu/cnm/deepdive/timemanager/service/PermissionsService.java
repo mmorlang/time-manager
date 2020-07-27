@@ -40,6 +40,9 @@ import java.util.Objects;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+/**
+ * handles the requesting and verifying of permissions needed for the apps.
+ */
 public class PermissionsService {
 
   private final MutableLiveData<Set<String>> permissions;
@@ -56,6 +59,11 @@ public class PermissionsService {
     return permissions;
   }
 
+  /**
+   * checks permissions status if available.
+   * @param activity
+   * @param requestCode
+   */
   public void checkPermissions(AppCompatActivity activity, int requestCode) {
     try {
       PackageInfo info = activity.getPackageManager().getPackageInfo(
@@ -90,6 +98,11 @@ public class PermissionsService {
     }
   }
 
+  /**
+   * updates permissions when new ones are added.
+   * @param permissions
+   * @param grants
+   */
   public void updatePermissions(@NonNull String[] permissions, @NonNull int[] grants) {
     //noinspection ConstantConditions
     Set<String> workingPermissions = new HashSet<>(this.permissions.getValue());
@@ -103,6 +116,10 @@ public class PermissionsService {
     updatePermissions(workingPermissions);
   }
 
+  /**
+   * updates permissions when new ones are added.
+   * @param permissions
+   */
   private void updatePermissions(Set<String> permissions) {
     if (!Objects.equals(this.permissions.getValue(), permissions)) {
       this.permissions.setValue(Collections.unmodifiableSet(permissions));
@@ -116,6 +133,9 @@ public class PermissionsService {
     fragment.show(activity.getSupportFragmentManager(), fragment.getClass().getName());
   }
 
+  /**
+   * holds an instance of something.
+   */
   private static class InstanceHolder {
 
     private static final edu.cnm.deepdive.timemanager.service.PermissionsService INSTANCE = new
@@ -131,6 +151,13 @@ public class PermissionsService {
     private static final String EXPLANATION_KEY_SUFFIX = "_explanation";
     private static final String PERMISSION_DELIMITER = "\\.";
 
+    /**
+     * creates a new instance.
+     * @param permissionsToExplain
+     * @param permissionsToRequest
+     * @param requestCode
+     * @return
+     */
     @NonNull
     private static PermissionsFragment createInstance(@NonNull String[] permissionsToExplain,
         String[] permissionsToRequest, int requestCode) {
@@ -164,6 +191,7 @@ public class PermissionsService {
                   requestCode))
           .create();
     }
+
 
     private String buildMessage(String[] permissionsToExplain) {
       //noinspection ConstantConditions

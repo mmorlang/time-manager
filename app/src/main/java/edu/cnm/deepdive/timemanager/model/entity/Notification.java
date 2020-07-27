@@ -7,6 +7,11 @@ import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
 import javax.xml.transform.Source;
 
+/**
+ * This Notification Entity Class declares all of its own attributes along with attributes that are
+ * being joined together as foreign keys.
+ */
+
 @Entity(
     foreignKeys = @ForeignKey(
         entity = Timeframe.class,
@@ -17,17 +22,23 @@ import javax.xml.transform.Source;
 
 public class Notification {
 
-
+  /**
+   * This Column declares the notificationId attribute and its conditions.
+   */
   @PrimaryKey(autoGenerate = true)
   @ColumnInfo(name = "notification_id")
   private long id;
 
+  /**
+   * This Column declares the summary attribute and its conditions.
+   */
   @NonNull
   @ColumnInfo(index = true)
   private String summary = "";
 
-// TODO Notification timestamp.
-
+  /**
+   * This Column declares the timframeId attribute and its conditions.
+   */
   @ColumnInfo(name = "timeframe_id", index = true)
   private long timeframeId;
 

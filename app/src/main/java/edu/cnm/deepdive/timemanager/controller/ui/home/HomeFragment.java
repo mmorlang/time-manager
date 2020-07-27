@@ -13,11 +13,20 @@ import androidx.lifecycle.ViewModelProviders;
 import androidx.navigation.fragment.NavHostFragment;
 import edu.cnm.deepdive.timemanager.R;
 
-
+/**
+ * This class contains an onCreate method that only invokes when the app is first installed.
+ */
 public class HomeFragment extends Fragment {
 
   private HomeViewModel homeViewModel;
 
+  /**
+   * onCreate method invokes when the app is first installed.
+   * @param inflater
+   * @param container
+   * @param savedInstanceState
+   * @return
+   */
   public View onCreateView(@NonNull LayoutInflater inflater,
       ViewGroup container, Bundle savedInstanceState) {
     homeViewModel =

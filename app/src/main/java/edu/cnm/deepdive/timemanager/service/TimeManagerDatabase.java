@@ -26,6 +26,10 @@ import java.util.Date;
     version = 1,
     exportSchema = true
 )
+
+/**
+ * Converts a lot of needed data into usable data.
+ */
 @TypeConverters({Converters.class})
 public abstract class TimeManagerDatabase extends RoomDatabase {
 
@@ -92,23 +96,46 @@ public abstract class TimeManagerDatabase extends RoomDatabase {
   }
 
 
+  /**
+   * converts data
+   */
   public static class Converters {
 
+    /**
+     * converts date into a long
+     * @param value
+     * @return long
+     */
     @TypeConverter
     public static Long dateToLong(Date value) {
       return  (value != null) ? value.getTime() : null;
     }
 
+    /**
+     * converts long to date
+     * @param value
+     * @return date
+     */
     @TypeConverter
     public static  Date longToDate(Long value) {
       return  (value != null) ? new Date(value) : null;
     }
 
+    /**
+     * converts local time to an integer
+     * @param value
+     * @return integer
+     */
     @TypeConverter
     public static Integer localTimeToInteger(LocalTime value) {
       return (value != null) ? value.toSecondOfDay() : null;
     }
 
+    /**
+     * converts integer to local time
+     * @param value
+     * @return local time
+     */
     @TypeConverter
     public static LocalTime integerToLocalTime(Integer value) {
       return  (value != null) ? LocalTime.ofSecondOfDay(value) : null;
