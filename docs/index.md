@@ -19,17 +19,17 @@ Some of the key elements of this app are as following.
 #### Types Of Users
 ###### [User Stories](user-stories.md)
 
-#### Design documentation
-
-###### [Wireframe diagram](wireframe.md)
-
-###### [ERD diagram](erd.md)
-
 ### User Instructions
 ###### [User Instructions](user-instructions.md)
 
 ### Build Instructions
 ###### [Build Instructions](build-instructions.md)
+
+#### Design documentation
+
+###### [Wireframe diagram](wireframe.md)
+
+###### [ERD diagram](erd.md)
 
 ### DDL
 ###### [DDL](ddl.md)
