@@ -17,46 +17,17 @@
     app:layout_constraintLeft_toLeftOf="parent"
     app:layout_constraintTop_toTopOf="parent"/>
 
-  <ToggleButton
-    android:id="@+id/toggleButton1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="ToggleButton"
-    app:layout_constraintBottom_toTopOf="@id/floatingActionButton2"
+
+  <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/connected_apps"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:orientation="vertical"
+    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
     app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintRight_toRightOf="parent"
-    android:layout_margin="16dp"
-    />
-
-  <ToggleButton
-    android:id="@+id/toggleButton2"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="ToggleButton"
-    app:layout_constraintTop_toBottomOf="@id/toggleButton1"
-    app:layout_constraintRight_toRightOf="parent"
-    android:layout_margin="16dp"
-    />
-
-  <ToggleButton
-    android:id="@+id/toggleButton4"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="ToggleButton"
-    app:layout_constraintTop_toBottomOf="@id/toggleButton2"
-    app:layout_constraintRight_toRightOf="parent"
-    android:layout_margin="16dp"
-
-    />
-
-  <ToggleButton
-    android:id="@+id/toggleButton3"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="ToggleButton"
-    app:layout_constraintTop_toBottomOf="@id/toggleButton4"
-    app:layout_constraintRight_toRightOf="parent"
-    android:layout_margin="16dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
     />
   <com.google.android.material.floatingactionbutton.FloatingActionButton
     android:id="@+id/floatingActionButton2"
@@ -66,49 +37,8 @@
     android:src="@android:drawable/ic_menu_add"
     app:layout_constraintRight_toRightOf="parent"
     app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintTop_toTopOf="@id/toggleButton3"
+    app:layout_constraintTop_toTopOf="@id/connected_apps"
     android:layout_margin="16dp"
  />
-  <TextView
-    android:id="@+id/textView"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="TextView"
-    app:layout_constraintBottom_toTopOf="@id/floatingActionButton2"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintLeft_toLeftOf="parent"
-    android:layout_margin="16dp"
-/>
-
-  <TextView
-    android:id="@+id/textView2"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_margin="16dp"
-    android:text="TextView"
-    app:layout_constraintTop_toTopOf="@id/textView"
-    app:layout_constraintLeft_toLeftOf="parent"
-    />
-
-  <TextView
-    android:id="@+id/textView3"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="TextView"
-    app:layout_constraintTop_toBottomOf="@id/textView2"
-    app:layout_constraintLeft_toLeftOf="parent"
-    android:layout_margin="16dp"
-    />
-
-  <TextView
-    android:id="@+id/textView4"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="TextView"
-    app:layout_constraintTop_toBottomOf="@id/textView3"
-    app:layout_constraintLeft_toLeftOf="parent"
-    android:layout_margin="16dp"
-    />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
