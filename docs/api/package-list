@@ -1,0 +1,9 @@
+edu.cnm.deepdive.timemanager
+edu.cnm.deepdive.timemanager.controller
+edu.cnm.deepdive.timemanager.controller.ui.dashboard
+edu.cnm.deepdive.timemanager.controller.ui.home
+edu.cnm.deepdive.timemanager.controller.ui.notifications
+edu.cnm.deepdive.timemanager.model.dao
+edu.cnm.deepdive.timemanager.model.entity
+edu.cnm.deepdive.timemanager.service
+edu.cnm.deepdive.timemanager.viewModel

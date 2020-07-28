@@ -48,6 +48,7 @@ Some of the key elements of this app are as following.
 ### DDL
 * [ddl.md](ddl.md)
 
+#### [Javadocs](api)
 
 ### User Instructions
 * [User Instructions](user-instructions.md)
@@ -68,10 +69,7 @@ Some of the key elements of this app are as following.
 * App connect to the default notifications system on the device.
 * The app will not be able to function without maintaining contact with notification system.
 
-##### AlarmManager
-* [https://developer.android.com/reference/android/app/AlarmManager](https://developer.android.com/reference/android/app/AlarmManager)
-* The app will use the AlarmManager to keep track of scheduled time frames the user has set to block notifications.
-* The app will not be able to function without maintaining contact with notification system.
-
+### Copyright & license information
+* [ Copyright & license information](notice.md)
 
 
