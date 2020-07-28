@@ -63,7 +63,7 @@ Some of the key elements of this app are as following.
 ### Cloud Based Services
 
 ##### Google SignIn
-* [GoogleSignInApi](https://developers.google.com/android/reference/com/google/android/gms/auth/api/signin/GoogleSignInApi)
+###### [GoogleSignInApi](https://developers.google.com/android/reference/com/google/android/gms/auth/api/signin/GoogleSignInApi)
 * Device will use Google SignIn to be able to sign in/create account with their google credentials.
 * The app will be able to function without constantly connecting to Google.
 
