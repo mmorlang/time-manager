@@ -23,6 +23,17 @@ Some of the key elements of this app are as following.
 
 ###### [ERD diagram](erd.md)
 
+### User Instructions
+* [User Instructions](user-instructions.md)
+
+### Build Instructions
+* [Build Instructions](build-instructions.md)
+
+### DDL
+* [DDL](ddl.md)
+
+### [Javadocs](api)
+
 
 ### Entities
 
@@ -45,27 +56,17 @@ Some of the key elements of this app are as following.
 ### Databases
 * [Time Manager Database](https://github.com/mmorlang/time-manager/blob/master/docs/TimeManagerDatabase.md)
 
-### DDL
-* [ddl.md](ddl.md)
-
-#### [Javadocs](api)
-
-### User Instructions
-* [User Instructions](user-instructions.md)
-
-### Build Instructions
-* [Build Instructions](build-instructions.md)
 
 #### Cloud Based Services
 
 ##### Google SignIn
-* [https://developers.google.com/android/reference/com/google/android/gms/auth/api/signin/GoogleSignInApi](https://developers.google.com/android/reference/com/google/android/gms/auth/api/signin/GoogleSignInApi)
+* [GoogleSignInApi](https://developers.google.com/android/reference/com/google/android/gms/auth/api/signin/GoogleSignInApi)
 * Device will use Google SignIn to be able to sign in/create account with their google credentials.
 * The app will be able to function without constantly connecting to Google.
 
 #### Device Based Services
 ##### Notification Manager
-* [https://developer.android.com/reference/android/app/NotificationManager](https://developer.android.com/reference/android/app/NotificationManager)
+* [NotificationManager](https://developer.android.com/reference/android/app/NotificationManager)
 * App connect to the default notifications system on the device.
 * The app will not be able to function without maintaining contact with notification system.
 
