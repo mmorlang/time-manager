@@ -13,51 +13,54 @@ Some of the key elements of this app are as following.
 
 - Displays notifications summary of items that were blocked, after time frame has ended.
 
+#### Current Build Status
+###### [Status](current_build_status.md)
+
 #### Types Of Users
 ###### [User Stories](user-stories.md)
 
 #### Design documentation
-
 
 ###### [Wireframe diagram](wireframe.md)
 
 ###### [ERD diagram](erd.md)
 
 ### User Instructions
-* [User Instructions](user-instructions.md)
+###### [User Instructions](user-instructions.md)
 
 ### Build Instructions
-* [Build Instructions](build-instructions.md)
+###### [Build Instructions](build-instructions.md)
 
 ### DDL
-* [DDL](ddl.md)
+###### [DDL](ddl.md)
 
-### [Javadocs](api)
+### Javadocs
+###### [Javadocs](api)
 
 
 ### Entities
 
-##### [Notification Entity](https://github.com/mmorlang/time-manager/blob/master/app/src/main/java/edu/cnm/deepdive/timemanager/model/entity/Notification.java)
-##### [Timeframe Entity](https://github.com/mmorlang/time-manager/blob/master/app/src/main/java/edu/cnm/deepdive/timemanager/model/entity/Timeframe.java)
-##### [Connected App Entity](https://github.com/mmorlang/time-manager/blob/master/app/src/main/java/edu/cnm/deepdive/timemanager/model/entity/ConnectedApp.java)
+###### [Notification Entity](https://github.com/mmorlang/time-manager/blob/master/app/src/main/java/edu/cnm/deepdive/timemanager/model/entity/Notification.java)
+###### [Timeframe Entity](https://github.com/mmorlang/time-manager/blob/master/app/src/main/java/edu/cnm/deepdive/timemanager/model/entity/Timeframe.java)
+###### [Connected App Entity](https://github.com/mmorlang/time-manager/blob/master/app/src/main/java/edu/cnm/deepdive/timemanager/model/entity/ConnectedApp.java)
 
 ### Daos
 
-##### [Notification Dao](https://github.com/mmorlang/time-manager/blob/master/app/src/main/java/edu/cnm/deepdive/timemanager/dao/NotificationDao.java)
-##### [Timeframe Dao](https://github.com/mmorlang/time-manager/blob/master/app/src/main/java/edu/cnm/deepdive/timemanager/dao/TimeframeDao.java)
-##### [Connected App Dao](https://github.com/mmorlang/time-manager/blob/master/app/src/main/java/edu/cnm/deepdive/timemanager/dao/ConnectedAppDao.java)
+###### [Notification Dao](https://github.com/mmorlang/time-manager/blob/master/app/src/main/java/edu/cnm/deepdive/timemanager/dao/NotificationDao.java)
+###### [Timeframe Dao](https://github.com/mmorlang/time-manager/blob/master/app/src/main/java/edu/cnm/deepdive/timemanager/dao/TimeframeDao.java)
+###### [Connected App Dao](https://github.com/mmorlang/time-manager/blob/master/app/src/main/java/edu/cnm/deepdive/timemanager/dao/ConnectedAppDao.java)
 
 ### Repositories
 
-##### [Notification Repository](https://github.com/mmorlang/time-manager/blob/master/app/src/main/java/edu/cnm/deepdive/timemanager/service/NotificationRepository.java)
-##### [TimeFrame Repository](https://github.com/mmorlang/time-manager/blob/master/app/src/main/java/edu/cnm/deepdive/timemanager/service/TimeframeRepository.java)
-##### [Connected App Repository](https://github.com/mmorlang/time-manager/blob/master/app/src/main/java/edu/cnm/deepdive/timemanager/service/ConnectedAppRepository.java)
+###### [Notification Repository](https://github.com/mmorlang/time-manager/blob/master/app/src/main/java/edu/cnm/deepdive/timemanager/service/NotificationRepository.java)
+###### [TimeFrame Repository](https://github.com/mmorlang/time-manager/blob/master/app/src/main/java/edu/cnm/deepdive/timemanager/service/TimeframeRepository.java)
+###### [Connected App Repository](https://github.com/mmorlang/time-manager/blob/master/app/src/main/java/edu/cnm/deepdive/timemanager/service/ConnectedAppRepository.java)
 
 ### Databases
-* [Time Manager Database](https://github.com/mmorlang/time-manager/blob/master/docs/TimeManagerDatabase.md)
+###### [Time Manager Database](https://github.com/mmorlang/time-manager/blob/master/docs/TimeManagerDatabase.md)
 
 
-#### Cloud Based Services
+### Cloud Based Services
 
 ##### Google SignIn
 * [GoogleSignInApi](https://developers.google.com/android/reference/com/google/android/gms/auth/api/signin/GoogleSignInApi)
@@ -66,11 +69,11 @@ Some of the key elements of this app are as following.
 
 #### Device Based Services
 ##### Notification Manager
-* [NotificationManager](https://developer.android.com/reference/android/app/NotificationManager)
+###### [NotificationManager](https://developer.android.com/reference/android/app/NotificationManager)
 * App connect to the default notifications system on the device.
 * The app will not be able to function without maintaining contact with notification system.
 
 ### Copyright & license information
-* [ Copyright & license information](notice.md)
+###### [ Copyright & license information](notice.md)
 
 

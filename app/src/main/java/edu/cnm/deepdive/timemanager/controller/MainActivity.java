@@ -8,7 +8,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import androidx.annotation.NonNull;
 import androidx.lifecycle.ViewModelProvider;
-import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
@@ -18,7 +17,6 @@ import androidx.navigation.ui.NavigationUI;
 import edu.cnm.deepdive.timemanager.R;
 import edu.cnm.deepdive.timemanager.service.GoogleSignInService;
 import edu.cnm.deepdive.timemanager.service.PermissionsService;
-import edu.cnm.deepdive.timemanager.view.AppRecyclerAdapter;
 import edu.cnm.deepdive.timemanager.viewModel.MainViewModel;
 import java.util.LinkedList;
 
@@ -30,13 +28,6 @@ public class MainActivity extends AppCompatActivity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
-    RecyclerView iconList = findViewById(R.id.timeframes);
-    MainViewModel viewModel = new ViewModelProvider(this).get(MainViewModel.class);
-    viewModel.getApps().observe(this, (apps) -> {
-      AppRecyclerAdapter adapter = new AppRecyclerAdapter(this, apps);
-      iconList.setAdapter(adapter);
-    });
-    viewModel.refreshApps();
     setupNavigation();
     setupObservers();
     checkPermissionsOnce();
@@ -118,5 +109,5 @@ public class MainActivity extends AppCompatActivity {
       }
     });
   }
-
 }
+
